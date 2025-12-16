@@ -1,0 +1,108 @@
+# NYU_ML_FINAL_PROJECT
+
+
+Notes:
+
+- To run nanoGPT:
+https://medium.com/@nimritakoul01/running-nanogpt-locally-on-your-computer-0b09692d6ed9
+
+- New Day:
+
+The File should not hold the X and T values when traiing they are esuelss and can be hardcoded. 
+
+Pavel said I can use the AskPavel file since its just data processing.
+
+
+November 20th, 
+
+Potential to make it so that its not complete or restrict the model?
+
+
+M: Meter of Music
+https://www.kennedy-center.org/education/resources-for-educators/classroom-resources/media-and-interactives/media/music/connections/connections/math--music/#:~:text=Composers%20use%20fractions%20to%20divide,into%20different%20arrangements%20of%20panes.
+
+
+Reading ABC: Notaion:
+https://thecelticroom.org/abc-music-notation/abc-notation-read-and-write.html
+https://jotterpad.app/app/plugins/abc-notation
+
+The More I think about it, I think Charecters are better then Notes, since I can probably assume 
+that they behave simmilar to Tries and in this case theres enough data to know about it.
+
+The way that transformer models work is that they essentially predict and try to see if a word 
+is valid which is why their syntax is so simmilar and you typically can see when something is
+written by AI because of that.
+
+
+Found this online to help convert it, using mini2abc will need to look into EasyABC
+https://manpages.ubuntu.com/manpages/jammy/man1/midi2abc.1.html#:~:text=midi2abc%20takes%20a%20MIDI%20format,value%20using%20the%20%2Da%20option.
+
+
+Differnece between a Music Note and a Music Charecter for Tokenization:
+also look at this demo-rnns.ipynb
+https://notabc.app/abc/tune-notes/#:~:text=In%20ABC%20notation%2C%20each%20note,'%20g'%20a'%20b'
+
+Pavel Also Responded Kindly:
+--------------------------------------------------------------------------------
+Hey Ibrahim,
+
+You can do whatever works! This is a pretty open-ended project. You don't need to have everything in a python program, it's fine if you do some of the preprocessing manually.  Good luck!
+
+Pavel
+--------------------------------------------------------------------------------
+
+analogy for the Tokenization:
+So a charecter is a letter but a note is a word, it might be better to use 
+notes since music is essentially a story   
+
+Takes 30 mins to just run...the conversion
+
+deleted the MIDI files and then added a gitignore since the files too big
+
+
+
+
+November 19: Created Repository
+Goal - Understand what I need to do
+Notes: 
+Might not be able to run on my Mac since Data will get huge at 100M I just need to make my model, and then change some parameters around to fit the different size of the Inputs, talk about them. Also will need to create a Google Docs that will house everything 
+
+Data is MIDI not AIFF like shown in Mac
+
+Downloaded Music21
+https://pypi.org/project/music21/
+
+Quick Overview on Music21:
+https://www.youtube.com/watch?v=MYVWPmzsRz8
+
+Read MIDI File:
+https://www.music21.org/music21docs/moduleReference/moduleMidi.html
+
+Used this to Verify my Results while I figure out how to convert:
+https://michaeleskin.com/tools/midi2abc/midi2abc.html
+
+Music21 cant convert to ABC
+https://www.music21.org/music21docs/moduleReference/moduleAbcFormat.html
+
+Can use EasyABC:
+https://easyabc.sourceforge.net
+
+ie. its almost 11 pm and I orderd dominos
+
+Emailed Proffessor:
+Hi Professor, 
+
+My name is Ibrahim Asad, I am in your CSGY 6923 ML Class, I didn't know if it was appropriate to post this on the Edstem board since I wanted to ask about my own process and how I was going to implement it.
+
+I was curious about preprocessing the data from MIDI to ABC since Music21 doesn't support it natively to convert from MIDI to ABC so I was looking online and saw there was midi2abc and easyABC both are GUI's however easyabc is the one suggested to be used by music21 when reading the documentation, assuming because of the formatting is different since I ran the same test files. I was curious if I can use easyabc since music21 doesn't support the conversion.
+
+Screenshot 2025-11-19 at 10.32.35 PM.png (had a screenshot of the abc files between midi2abc and easyabc)
+
+With that does the program have to have to run natively or can I mention it in the build instructions by saying you need to download EasyABC and run it through a batch file that's called by my python pipeline for example. I haven't tested it further on how to actually run it in the file yet. Else is it simply looking at the github repo and trying to find the "engine" and adding it to the code. 
+
+https://github.com/jwdj/EasyABC 
+
+Kind Regards,
+Ibrahim
+
+

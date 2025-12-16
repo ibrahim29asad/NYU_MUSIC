@@ -1,1 +1,3 @@
-# NYU_MUSIC
+# NYU_ML_FINAL_PROJECT
+
+Ibrahim Asad
