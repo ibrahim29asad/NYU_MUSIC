@@ -20,6 +20,8 @@ Once completed cd.. or cd out of the nanoGPT in the main directory and run Compl
 
 Models.ipynb has the plots for the scattering plots.
 
+if you use mac change cuda to mps and if not use cuda
+
 and links to everything can be found here:
 GitHub Repo:
 https://github.com/ibrahim29asad/NYU_MUSIC/tree/main 
